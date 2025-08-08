@@ -1,0 +1,208 @@
+/* == FONT == */
+
+@font-face {
+    font-family: "MontSerra";
+    display: swap;
+    font-style: normal;
+    src: url("../fonts/Montserrat-VariableFont_wght.ttf") format("truetype");
+}
+
+@font-face {
+    font-family: "Roboto";
+    display: swap;
+    font-style: normal;
+    src: url("../fonts/Roboto-VariableFont_wdth\,wght.ttf") format("truetype");
+}
+
+@font-face {
+    font-family: "Mozilla";
+    display: swap;
+    font-style: normal;
+    src: url("../fonts/MozillaText-VariableFont_wght.ttf") format("truetype");
+}
+@font-face {
+    font-family: "OpenSans";
+    display: swap;
+    font-style: normal;
+    src: url("../fonts/OpenSans-VariableFont_wdth\,wght.ttf") format("truetype");
+}
+
+
+@font-face {
+/* Define your font */
+    font-family: "....";
+    display: swap;
+    font-style: normal;
+    src: url("...") format("truetype");
+}
+
+/* == COLOR == */
+
+:root{
+    --color-black: #333;
+    --color-white: #FFF;
+
+    --color-primary: "";
+    --color-secondary: "";
+    --color-light: "";
+}
+
+/* == RESET == */
+
+*,*::before,*::after{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+html,
+body{
+    scroll-behavior: smooth;
+}
+
+body{
+    margin: 0;
+    line-height: 1.4;
+    font-size: 1.1rem;
+    color: var(--color-black);
+    background-color: var(--color-white);
+    font-family: "OpenSans", sans-serif, serif;
+}
+
+a,
+img, 
+input, 
+span, 
+button{
+    display: block;
+}
+
+a{
+    color: inherit;
+    text-decoration: none;
+    cursor: pointer;
+    font-weight: 500;
+}
+
+button,
+input{
+    background: none;
+    border: none;
+}
+
+h1,
+h2,
+h3,
+h4{
+    margin-top: 0;
+    margin-bottom: 1rem;
+    line-height: 1;
+}
+
+p{
+    line-height: 1.5;
+    margin-bottom: 1rem;
+    font-size: clamp(1rem, 18rem, 1.1rem);
+}
+
+ul, li{
+    list-style-type: none;
+}
+
+img{
+    max-width: 100%;
+    height: auto;
+}
+
+/* == UTILITY == */
+
+.container{
+    margin: 0 auto;
+    width: 100%;
+    padding-inline: 1rem;
+}
+
+.btn{
+    position: relative;
+    max-width: max-content;
+    outline: none;
+    border: none;
+    background-color: transparent;
+    text-align: center;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    gap: .5rem;
+    font-size: 0.938rem;
+    font-weight: normal;
+    box-shadow: rgba(0, 0, 0, 0.05) 0px 0px 0px 1px;
+    border-radius: 0.375rem;
+    padding: .44rem 1rem;
+    font-weight: 500;
+}
+
+.btn-primary{
+    background-color: #171717;
+    color: #FFF;
+}
+
+.btn-secondary{
+    background-color: #f5f5f5;
+    color: #171717;
+}
+
+.btn-light{
+    background-color: var(--color-white);
+}
+
+
+.boite-shadow{
+    /* 1 */
+    box-shadow: rgba(9, 30, 66, 0.25) 0px 1px 1px, rgba(9, 30, 66, 0.13) 0px 0px 1px 1px;
+    /* 2 */
+    box-shadow: rgba(14, 63, 126, 0.06) 0px 0px 0px 1px, rgba(42, 51, 70, 0.03) 
+    0px 1px 1px -0.5px, rgba(42, 51, 70, 0.04) 0px 2px 2px -1px, rgba(42, 51, 70, 0.04) 
+    0px 3px 3px -1.5px, rgba(42, 51, 70, 0.03) 0px 5px 5px -2.5px, rgba(42, 51, 70, 0.03) 
+    0px 10px 10px -5px, rgba(42, 51, 70, 0.03) 0px 24px 24px -8px;
+    /* 3 */
+    box-shadow: rgba(0, 0, 0, 0.1) 0px 1px 3px 0px, rgba(0, 0, 0, 0.06) 0px 1px 2px 0px;
+}
+
+
+/* == MEDIA == */
+
+@media (min-width: 640px){
+    .container{
+        max-width: 640px;
+    }
+}
+
+@media (min-width: 768px){
+    .container{
+        max-width: 768px;
+    }
+}
+
+@media (min-width: 1024px){
+    .container{
+        max-width: 1024px;
+    }
+}
+
+@media (min-width: 1024px){
+    .container{
+        max-width: 1024px;
+    }
+}
+
+@media (min-width: 1200px){
+    .container{
+        max-width: 1200px;
+    }
+}
+
+/* @media (min-width: 1500px){
+    .container{
+        max-width: 1500px;
+    }
+} */
